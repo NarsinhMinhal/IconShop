@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Your existing head content here -->
+</head>
+<link rel="stylesheet" href="styles.css">
+
+<body>
+    <header>
+        <h1>Icon Shop Website</h1>
+    </header>
+    <nav>
+        <!-- Your existing navigation links here -->
+    </nav>
+    <section id="checkout">
+        <h2>Proceed to Checkout</h2>
+        <p>Select your preferred payment method:</p>
+        <div>
+            <input type="radio" id="cashOnDelivery" name="paymentMethod" value="cashOnDelivery">
+            <label for="cashOnDelivery">Cash on Delivery</label>
+            <br>
+            <input type="radio" id="upi" name="paymentMethod" value="upi">
+            <label for="upi">UPI</label>
+            <br>
+            <input type="radio" id="netBanking" name="paymentMethod" value="netBanking">
+            <label for="netBanking">Net Banking</label>
+            <br>
+            <input type="radio" id="gpay" name="paymentMethod" value="gpay">
+            <label for="gpay">Google Pay</label>
+        </div>
+        <button onclick="placeOrder()">Place Order</button>
+    </section>
+     <section class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Mobile: +91 1234567890</p>
+        <p>Email: info@iconshop.com</p>
+        <p>Address: 1234 Main Street, Ambawadi,Ahmedabad, India</p>
+    </section>
+    <footer>
+        &copy; 2023 Icon Shop Website. All rights reserved.
+    </footer>
+
+    <script>
+        function placeOrder() {
+            // Perform order placement logic here
+            alert("Order placed successfully!");
+            // You can redirect to a thank you page or perform other actions
+            // For now, let's redirect back to the home page
+            window.location.href = "index.html";
+        }
+    </script>
+
+</body>
+
+</html>

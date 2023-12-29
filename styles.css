@@ -1,0 +1,74 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}
+
+
+/*nav {
+    background-color: #007bff;
+    color: rgb(255, 0, 0);
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+
+/* Add margin to the right of each navigation link */
+
+
+/*nav a {
+    margin-right: 1em;
+}*/
+
+nav {
+    background-color: #007bff;
+    /* Updated color */
+    color: #fff;
+    padding: 0.5em;
+    margin: 0.5em;
+    text-align: center;
+}
+
+nav a {
+    margin-right: 1em;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+section {
+    max-width: 800px;
+    margin: 2em auto;
+    background-color: #fff;
+    padding: 2em;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.contact-info {
+    float: center;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+}

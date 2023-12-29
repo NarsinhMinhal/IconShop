@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Icon Shop Website - Account</title>
+    <style>
+        /* Your existing styles go here */
+        /* Added styles for the "Sign In" button */
+        
+        #signin-button {
+            padding: 0.7em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        #signin-button:hover {
+            background-color: #000000;
+        }
+    </style>
+    <script>
+        function toggleSignInForm() {
+            var signInForm = document.getElementById("signin-form");
+            signInForm.classList.toggle("active");
+        }
+
+        function navigateToSignInPage() {
+            // Redirect to the sign-in page
+            window.location.href = "signin.html";
+        }
+
+        function signIn() {
+            // You can perform AJAX request for actual sign-in logic
+            alert("Sign In Successful!");
+            // After successful sign-in, you may want to hide the form or redirect the user
+            toggleSignInForm();
+        }
+
+        function signOut() {
+            // You can perform AJAX request for actual sign-out logic
+            alert("Sign Out Successful!");
+        }
+
+        function editAccount() {
+            // Redirect to the Edit Account page or perform AJAX request
+            window.location.href = "edit_account.html";
+        }
+
+        function changePassword() {
+            // Redirect to the Change Password page or perform AJAX request
+            window.location.href = "change_password.html";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Icon Shop Website</h1>
+    </header>
+    <nav>
+        <a href="index.html" title="Go to the Home page">Home</a>
+        <a href="products.html" title="Explore our wide range of products">Products</a>
+        <a href="categories.html" title="Browse through our product categories">Categories</a>
+        <a href="cart.html" title="View items in your shopping cart">Cart</a>
+        <a href="account.html" title="Manage your account settings">Account</a>
+        <button id="signin-button" onclick="navigateToSignInPage()">Sign In</button>
+        <button onclick="signOut()">Sign Out</button>
+    </nav>
+    <section id="account-details">
+        <h2>Manage Your Account</h2>
+        <p>Welcome to your account page! Here, you can manage your personal information, order history, and account settings.</p>
+
+        <!-- Example account details -->
+        <div>
+            <strong>Name:</strong> John Doe
+        </div>
+        <div>
+            <strong>Email:</strong> john.doe@example.com
+        </div>
+
+        <!-- Add more account-related information as needed -->
+
+        <!-- Edit and Change Password buttons -->
+        <button onclick="editAccount()">Edit Account</button>
+        <button onclick="changePassword()">Change Password</button>
+    </section>
+    <section id="order-history">
+        <h2>Order History</h2>
+        <!-- Display a list of past orders with details -->
+        <ul>
+            <li><a href="order_details.html">Order #123 - Date: January 1, 2023</a></li>
+            <!-- Add more order details as needed -->
+        </ul>
+    </section>
+    <section class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Mobile: +91 1234567890</p>
+        <p>Email: info@iconshop.com</p>
+        <p>Address: 1234 Main Street, Ambawadi,Ahmedabad, India</p>
+    </section>
+
+    <footer>
+        &copy; 2023 Icon Shop Website. All rights reserved.
+    </footer>
+</body>
+
+</html>

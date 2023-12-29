@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Icon Shop Website - Sign In</title>
+    <style>
+        /* Your existing styles go here */
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: #555;
+            color: #fff;
+            padding: 0.5em;
+            text-align: center;
+        }
+        
+        section {
+            max-width: 400px;
+            margin: 2em auto;
+            background-color: #fff;
+            padding: 2em;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        
+        label {
+            margin-bottom: 0.5em;
+        }
+        
+        input {
+            padding: 0.5em;
+            margin-bottom: 1em;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+        
+        button {
+            padding: 0.7em;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        button:hover {
+            background-color: #0056b3;
+        }
+        
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 1em;
+            text-align: center;
+        }
+    </style>
+    <script>
+        function signIn() {
+            // You can perform AJAX request for actual sign-in logic
+            alert("Sign In Successful!");
+            // After successful sign-in, you may want to redirect the user
+            window.location.href = "account.html";
+        }
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1>Icon Shop Website</h1>
+    </header>
+    <nav>
+        <!-- Include navigation links if needed -->
+    </nav>
+
+    <section id="signin-form">
+        <h2>Sign In</h2>
+        <form>
+            <label for="username">Username:</label>
+            <input type="text" id="username" name="username" required>
+
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" required>
+
+            <button type="button" onclick="signIn()">Sign In</button>
+        </form>
+    </section>
+    <section class="contact-info">
+        <h3>Contact Us</h3>
+        <p>Mobile: +91 1234567890</p>
+        <p>Email: info@iconshop.com</p>
+        <p>Address: 1234 Main Street, Ambawadi,Ahmedabad, India</p>
+    </section>
+    <footer>
+        &copy; 2023 Icon Shop Website. All rights reserved.
+    </footer>
+</body>
+
+</html>
